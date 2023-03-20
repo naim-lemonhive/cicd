@@ -10,7 +10,7 @@ const app = express();
 
 // Set up mongoose connection
 
-const mongoDB = process.env.MONGODB_URI;
+const mongoDB = "mongodb://localhost:27017/cicd"
 
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
